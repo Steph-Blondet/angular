@@ -44,9 +44,9 @@ export class HeroesComponent implements OnInit {
   }
 
   // Add the following onSelect() method, which assigns the clicked hero from the template to the component's selectedHero
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 
   // Create a function to retrieve the heroes from the service.
   // The HeroService.getHeroes() method has a synchronous signature, which implies that the HeroService can fetch heroes synchronously. The HeroesComponent consumes the getHeroes() result as if heroes could be fetched synchronously.

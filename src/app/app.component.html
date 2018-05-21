@@ -1,6 +1,14 @@
 <h1>{{title}}</h1>
 
+<!-- Add a <nav> element and, within that, an anchor element that, when clicked, triggers navigation to the HeroesComponent. -->
+<nav>
+  <!-- The user should be able to navigate back and forth between the DashboardComponent and the HeroesComponent by clicking links in the navigation area near the top of the page -->
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
 <!-- Display the HeroesComponent -->
-<app-heroes></app-heroes>
+<!-- <app-heroes></app-heroes> -->
+<!-- You removed <app-heroes> because you will only display the HeroesComponent when the user navigates to it. The <router-outlet> tells the router where to display routed views. -->
+<router-outlet></router-outlet>
 <!-- Display the MessagesComponent -->
 <app-messages></app-messages>
